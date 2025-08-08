@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --header-footer: #10375C;
+  --color-primary-h2: rgba(16, 55, 92, 1);
+  --bg-btn: rgba(46, 128, 206, 1);
+  --spacing-letter-h1: -0.0875rem;
+  --max-screen: 90rem;
+  --tag-width: 21.125rem;
+  --tag-height: 23.125rem;
+  --box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+  --color-custom-border: rgba(64, 97, 129, 1);
+  --color-bg-modal: rgba(0, 0, 0, 0.4);
+  /* --foreground: #171717; */
+}
+
+@theme inline {
+  --shadow-custom: var(--box-shadow);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-header-footer: var(--header-footer);
+  --color-btn: var(--bg-btn);
+  --color-custom-border: var(--color-custom-border);
+  --color-primary-h2: var(--color-primary-h2);
+  --color-bg-modal: var(--color-bg-modal);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-sora: var(--font-sora);
+  --width-tag: var(--tag-width);
+  --width-h2: 30.625rem;
+  --height-tag: var(--tag-height);
+  --height-600: 37.5rem;
+  --height-450: 28.125rem;
+  --height-550: 34.375rem;
+  --height-1000: 62.5rem;
+  --tracking-custom-h1: var(--spacing-letter-h1);
+  --max-width-maximum-screen: var(--max-screen);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
