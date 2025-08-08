@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --height-hero-img: 30.5rem;
+  --primary-color: #181E52;
+  --color-p: #656689;
+  --color-btn: #FF5B2E;
+  --color-btn-rgb: rgba(255, 91, 46, 0.4);
+  --color-p-text: #656689;
+  --color-pet-vacation: #48496A;
+  --color-h3-title: #5E6085;
+  --color-bg: rgba(255, 255, 255, 1);
+  --color-bg-2: #FFF6ED;
+  --height-322: 20.125rem;
+  --height-460: 28.75rem;
+  --height-412: 25.75rem;
+  --height-516: 32.25rem;
+  --height-430: 26.875rem;
+  --height-700: 43.75rem;
+  --height-947: 59.1875rem;
+  --height-395: 24.6875rem;
+  --width-517: 32.3125rem;
+  --w-70-percents: 70%;
+  --h-70-percents: 70%;
+  --color-article-2: rgba(255, 153, 126, 1);
+  --color-article-3: rgba(91, 214, 226, 1);
+  --color-circle-arrow: rgba(255, 91, 46, 1);
+  --color-modal: rgba(0, 0, 0, 0.5);
+  /* --foreground: #171717; */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+  --font-sora: var(--font-sora);
+  --color-custom-bg: var(--color-bg);
+  --color-custom-bg2: var(--color-bg-2);
+  --height-516: var(--height-516);
+  --breakpoint-custom-lg: 1025px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
